@@ -73,7 +73,7 @@ app.get('/pay', function(req, res) {
             email: "test_user_63274575@testuser.com",
             phone: {
                 area_code: "11",
-                number: "22223333"
+                number: 22223333
             },
             address: {
                 street_name: "False",
