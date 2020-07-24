@@ -67,6 +67,20 @@ app.get('/pay', function(req, res) {
                 unit_price: parseFloat(productData.price)
             }
         ],
+        payer: {
+            name: "Lalo",
+            surname: "Landa",
+            email: "test_user_63274575@testuser.com",
+            phone: {
+                area_code: "11",
+                number: "22223333"
+            },
+            address: {
+                street_name: "False",
+                street_number: 123,
+                zip_code: 1111
+            }
+        },
         back_urls: {
             success: "https://rayway-mp-ecommerce-nodejs.herokuapp.com/success",
             failure: "https://rayway-mp-ecommerce-nodejs.herokuapp.com/failure",
