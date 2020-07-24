@@ -1,4 +1,4 @@
-
+<script src="https://www.mercadopago.com/v2/security.js" view="item"></script>
 <div class="as-search-wrapper" role="main">
     <div class="as-navtuck-wrapper">
         <div class="as-l-fullwidth  as-navtuck" data-events="event52">
@@ -84,7 +84,13 @@
                                     {{ unit }}
                                 </h3>
                             </div>
-                            <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
+                            <form action="/pay" method="get">
+                                <input type="hidden" name="img" value="{{ img }}">
+                                <input type="hidden" name="title" value="{{ title }}">
+                                <input type="hidden" name="price" value="{{ price }}">
+                                <input type="hidden" name="unit" value="{{ unit }}">
+                                <button type="submit" class="mercadopago-button" formmethod="get">Pagar la compra</button>
+                            </form>
                         </div>
                     </div>
                 </div>
