@@ -68,9 +68,9 @@ app.get('/pay', function(req, res) {
             }
         ],
         back_urls: {
-            success: "localhost:5000/success",
-            failure: "localhost:5000/failure",
-            pending: "localhost:5000/pending"
+            success: "https://rayway-mp-ecommerce-nodejs.herokuapp.com/success",
+            failure: "https://rayway-mp-ecommerce-nodejs.herokuapp.com/failure",
+            pending: "https://rayway-mp-ecommerce-nodejs.herokuapp.com/pending"
         },
         auto_return: "approved",
         payment_methods: {
