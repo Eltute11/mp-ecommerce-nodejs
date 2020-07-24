@@ -78,7 +78,7 @@ app.get('/pay', function(req, res) {
             address: {
                 street_name: "False",
                 street_number: 123,
-                zip_code: 1111
+                zip_code: "1111"
             }
         },
         back_urls: {
